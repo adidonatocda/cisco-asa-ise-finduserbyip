@@ -3,13 +3,9 @@ import sys
 import string
 import requests
 import urllib3
-from pprint import pprint
 import json
 import getpass
 import xml.etree.ElementTree as ET
-from ipwhois import IPWhois
-from ipwhois.utils import get_countries
-from ipwhois import __version__
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -233,7 +229,3 @@ if __name__ == "__main__":
     print("====================")
     print("")
     match_sessions2()
-    finduser=input("Which user are you looking for?")
-    print(finduser)
-    finduser_sessions()
-    pprint(asareq.text)
